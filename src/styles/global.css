@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #00232b;
+
+  --color-accent: #00d47b;
+}
+
+* {
+  font-family: "DM Sans", sans-serif;
+}
