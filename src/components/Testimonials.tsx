@@ -3,7 +3,7 @@ import Stack from "./Stack";
 
 export const Testimonials = () => {
   return (
-    <div className="w-72 h-80  md:w-180 md:h-52">
+    <div className="w-full pr-12 md:pr-0 md:w-200 lg:w-150 h-80">
       <Stack
         cards={[
           <ClientCard />,
