@@ -10,7 +10,7 @@ export const Services = () => {
       <h2 className="mb-6 md:mb-16 text-primary-transvego text-3xl md:text-5xl lg:text-[64px] font-medium">
         Nuestros Servicios
       </h2>
-      <div className="flex flex-col lg:flex-row gap-20 lg:gap-12 w-full">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:flex lg:flex-row gap-y-40 gap-x-20 lg:gap-12 w-full">
         {SERVICES.map((service,index) => (
           <Service
             key={index}
