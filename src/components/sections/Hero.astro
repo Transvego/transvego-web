@@ -1,0 +1,31 @@
+---
+import { StatsBanner } from "../stats/Banner";
+import { Button } from "../ui/Button";
+
+---
+
+<div class="bg-[url(/images/hero.webp)] bg-cover bg-center bg-no-repeat h-[60dvh] md:h-dvh">
+  <div class="flex flex-col items-center justify-center mx-auto h-full">
+    <h1 class="hidden">TRANSVEGO</h1>
+    <div
+      class="flex flex-col items-center justify-center text-center max-w-90 md:max-w-120 lg:max-w-none mx-4 lg:mx-auto"
+    >
+      <h2
+        class="text-primary-transvego text-3xl md:text-4xl lg:text-[64px] font-medium mb-4 leading-none"
+      >
+        Cada viaje es una <br> experiencia memorable
+      </h2>
+      <p class="text-primary-transvego/70 text-sm md:text-base lg:text-xl  mb-9">
+        Garantizando comodidad, seguridad y eficiencia <br> con un servicio
+        sostenible y un equipo altamente capacitad
+      </p>
+      <div class="lg:hidden">
+        <Button small>Trabajemos Juntos</Button>
+      </div>
+      <div class="hidden lg:block">
+        <Button>Trabajemos Juntos</Button>
+      </div>
+    </div>
+    <StatsBanner client:visible />
+  </div>
+</div>

@@ -1,0 +1,28 @@
+---
+import { ClientCard } from "../cards/Client";
+import { StatsBanner } from "../stats/Banner";
+import { Testimonials } from "../Testimonials";
+import { Button } from "../ui/Button";
+---
+
+<section class="mt-65 flex flex-col items-center gap-16 mb-16">
+  <h2
+    class="self-start text-primary-transvego text-3xl md:text-5xl lg:text-[64px] font-medium mb-6"
+  >
+    Testimonios de Nuestro Clientes
+  </h2>
+  <div class="w-full flex flex-col lg:flex-row gap-6 justify-between">
+    <Testimonials client:load />
+    <div class="flex flex-col gap-6 justify-between items-start lg:max-w-100">
+      <p class="text-primary-transvego/80">
+        Estamos comprometidos con nuestros clientes, trabajando cada día para
+        ofrecer soluciones que superen sus expectativas y generen resultados
+        reales. Sus experiencias y confianza son la mejor prueba de nuestro
+        compromiso.”
+      </p>
+
+      <Button small secondary>Nuestros Servicios</Button>
+    </div>
+  </div>
+  <StatsBanner client:load />
+</section>
