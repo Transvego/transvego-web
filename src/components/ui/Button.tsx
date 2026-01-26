@@ -9,6 +9,7 @@ export const Button = ({
   small,
   icon,
   type = "button",
+  disabled,
   ...props
 }: ButtonProps) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -19,9 +20,16 @@ export const Button = ({
     secondary:
       "text-primary-transvego border border-primary-transvego hover:text-white hover:bg-accent-transvego hover:border-accent-transvego",
     link: "text-primary-transvego hover:text-white hover:bg-accent-transvego",
+    disabled: "bg-gray-300 text-gray-500 ",
   };
 
-  const buttonVariant = link ? "link" : secondary ? "secondary" : "primary";
+  const buttonVariant = disabled
+    ? "disabled"
+    : link
+      ? "link"
+      : secondary
+        ? "secondary"
+        : "primary";
 
   const size = {
     default: "py-3 px-5 text-lg",
@@ -30,13 +38,13 @@ export const Button = ({
 
   return (
     <motion.button
-    type={type}
-    {...props}
+      type={type}
+      {...props}
       onHoverStart={() => setIsHovered(true)}
       onHoverEnd={() => setIsHovered(false)}
       className={`${!small ? size.default : size.small} font-medium ${
         variant[buttonVariant]
-      } flex items-center justify-center rounded-full cursor-pointer ${
+      } flex items-center justify-center rounded-full ${disabled ? "cursor-not-allowed" : "cursor-pointer"}  ${
         !icon ? "transition-all duration-300" : "transition-none "
       }`}
     >

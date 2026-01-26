@@ -11,11 +11,11 @@ export const ClientCard = () => {
       <Rating />
       <div>
         <figure className="flex gap-4 items-center">
-            <div className="bg-primary-transvego/40 w-10 h-10 rounded-full"/>
-          {/* <img src="" alt="" /> */}
+            {/* <div className="bg-primary-transvego/40 w-10 h-10 rounded-full"/> */}
+          <img className="w-10 h-10 rounded-full" src="/images/clients/lacabaña.png" alt="Ingenio La Cabaña" />
           <figcaption className="flex flex-col text-primary-transvego">
-            Client 1 
-            <span className="text-primary-transvego/60">A qué se dedica</span>
+            Ingenio La Cabaña
+            <span className="text-primary-transvego/60"></span>
           </figcaption>
         </figure>
       </div>

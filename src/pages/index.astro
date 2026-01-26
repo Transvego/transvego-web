@@ -1,6 +1,5 @@
 ---
 import Layout from "@/layouts/Layout.astro";
-import Hero from "@/components/sections/Hero.astro";
 import AboutUs from "@/components/sections/AboutUs.astro";
 import Allies from "@/components/sections/Allies.astro";
 import { Wrapper } from "@/components/Wrapper";
@@ -8,10 +7,11 @@ import { Services } from "@/components/sections/Services";
 import { Ticker } from "@/components/Ticker";
 import Clients from "@/components/sections/Clients.astro";
 import ContactUs from "@/components/sections/ContactUs.astro";
+import { Hero } from "@/components/sections/Hero";
 ---
 
 <Layout>
-  <Hero />
+  <Hero client:load />
   <main>
     <Wrapper>
       <AboutUs />

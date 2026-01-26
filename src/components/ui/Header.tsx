@@ -1,3 +1,4 @@
+import { handleScroll } from "@/lib/utils";
 import { LINKS } from "../../constants/nav";
 import { Button } from "./Button";
 import { motion, AnimatePresence } from "framer-motion";
@@ -17,17 +18,6 @@ export const Header = () => {
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
-
-  const handleScroll = (id: string) => {
-    const element = document.querySelector(id);
-    if (!element) return;
-
-    const yOffset = -260;
-    const y =
-      element.getBoundingClientRect().top + window.pageYOffset + yOffset;
-
-    window.scrollTo({ top: y, behavior: "smooth" });
-  };
 
   return (
     <>

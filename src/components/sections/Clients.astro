@@ -9,7 +9,7 @@ import { Button } from "../ui/Button";
   <h2
     class="self-start text-primary-transvego text-3xl md:text-5xl lg:text-[64px] font-medium mb-6"
   >
-    Testimonios de <br class="md:hidden"> Nuestro Clientes
+    Testimonios de <br class="md:hidden" /> Nuestro Clientes
   </h2>
   <div class="w-full flex flex-col md:flex-row gap-x-20 justify-between">
     <Testimonials client:load />
@@ -21,8 +21,10 @@ import { Button } from "../ui/Button";
         compromiso.”
       </p>
 
-      <Button small secondary>Nuestros Servicios</Button>
+      <a href="#servicios">
+        <Button small secondary>Nuestros Servicios</Button>
+      </a>
     </div>
   </div>
-  <StatsBanner client:load />
+  <StatsBanner client:visible />
 </section>

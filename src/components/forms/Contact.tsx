@@ -5,6 +5,7 @@ import { useForm, ValidationError } from "@formspree/react";
 
 export const ContactForm = () => {
   const [state, handleSubmit] = useForm("mqeepkgo");
+  const [email, setEmail] = useState("")
 
   if (state.succeeded) {
     return <p>Estartemos en contacto contigo al correo que indicaste.</p>;
@@ -25,9 +26,10 @@ export const ContactForm = () => {
           type="email"
           required
           placeholder="Correo"
+          onChange={(e)=>setEmail(e.target.value)}
         />
         <ValidationError prefix="Email" field="email" errors={state.errors} />
-        <Button disabled={state.submitting} type="submit">
+        <Button disabled={state.submitting || email === ""} type="submit">
           Enviar
         </Button>
       </div>

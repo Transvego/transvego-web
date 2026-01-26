@@ -2,24 +2,38 @@
 import { Button } from "../ui/Button";
 ---
 
-  <section id="sobrenosotros" class="mt-32 md:mt-40 flex flex-col gap-16">
-    <div class="flex flex-col lg:flex-row lg:items-center justify-between">
-      <h2 class="text-primary-transvego text-3xl md:text-5xl lg:text-[64px] font-medium mb-6 lg:mb-0">Sobre Nosotros</h2>
-      <div>
-        <p class="mb-5 max-w-145 text-primary-transvego lg:max-w-120">
-          En el centro de todo lo que hacemos están nuestros valores: progreso,
-          calidad y calidez, que nos impulsan a brindar experiencias confiables
-          y humanas en cada viaje.
-        </p>
-        <!-- <div class="md:hidden">
+<section id="sobrenosotros" class="mt-32 md:mt-40 flex flex-col gap-16">
+  <div class="flex flex-col lg:flex-row lg:items-center justify-between">
+    <h2
+      class="text-primary-transvego text-3xl md:text-5xl lg:text-[64px] font-medium mb-6 lg:mb-0"
+    >
+      Sobre Nosotros
+    </h2>
+    <div>
+      <p class="mb-5 max-w-145 text-primary-transvego lg:max-w-120">
+        En el centro de todo lo que hacemos están nuestros valores: progreso,
+        calidad y calidez, que nos impulsan a brindar experiencias confiables y
+        humanas en cada viaje.
+      </p>
+      <!-- <div class="md:hidden">
           <Button secondary small>Conoce más</Button>
         </div>
         <div class="hidden md:block">
           <Button secondary>Conoce más</Button>
         </div> -->
-      </div>
     </div>
-    <div class="flex items-center justify-center h-80 md:h-120 bg-gray-transvego rounded-4xl">
-        <p class="text-primary-transvego/20">Imagen</p>
-    </div>
-  </section>
+  </div>
+  <div
+    class="flex items-center justify-center h-80 md:h-120 bg-gray-transvego rounded-4xl"
+  >
+    <p class="text-primary-transvego/20">Imagen</p>
+  </div>
+  <div class="flex flex-col md:flex-row gap-6 items-center justify-between">
+    <p class="text-primary-transvego lg:max-w-120">
+      Contamos con certificados internacionales, que respaldan nuestro
+      compromiso con la calidad en los procesos, la gestión ambiental
+      responsable y la seguridad y salud en el trabajo.
+    </p>
+    <img src="/images/certifications/certifications.webp" alt="Certificaciones" class="w-80 md:w-95">
+  </div>
+</section>
