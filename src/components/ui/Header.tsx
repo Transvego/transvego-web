@@ -34,7 +34,7 @@ export const Header = () => {
       <motion.header
         initial={{ width: window.innerWidth < 768 ? "100%" : "80%" }}
         animate={{
-          width: window.innerWidth < 768 ? "100%" : scrolled ? "60%" : "80%",
+          width: window.innerWidth < 768 ? "100%" : scrolled ? "68%" : "80%",
         }}
         transition={{ type: "spring", stiffness: 200, damping: 30 }}
         className="
@@ -49,13 +49,13 @@ export const Header = () => {
         <img
           src="/images/logos/primary-responsive.webp"
           alt="Transvego"
-          className="w-7 lg:hidden"
+          className="w-7 xl:hidden"
         />
 
         <img
           src="/images/logos/primary.webp"
           alt="Transvego"
-          className="hidden lg:block w-45"
+          className="hidden xl:block w-40"
         />
 
         <nav className="hidden md:block">
