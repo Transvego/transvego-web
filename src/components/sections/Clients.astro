@@ -5,11 +5,11 @@ import { Testimonials } from "../Testimonials";
 import { Button } from "../ui/Button";
 ---
 
-<section class="mt-65 flex flex-col items-center gap-16 mb-16">
+<section class="mt-65 flex flex-col items-center md:gap-16 mb-16">
   <h2
     class="self-start text-primary-transvego text-3xl md:text-5xl lg:text-[64px] font-medium mb-6"
   >
-    Testimonios de Nuestro Clientes
+    Testimonios de <br class="md:hidden"> Nuestro Clientes
   </h2>
   <div class="w-full flex flex-col md:flex-row gap-x-20 justify-between">
     <Testimonials client:load />
