@@ -1,10 +1,7 @@
 import type { Link } from "../types/ui/link";
 
 export const LINKS: Link[] = [
-  {
-    label: "Inicio",
-    href: "/",
-  },
+  
   {
     label: "Sobre Nosotros",
     href: "#sobrenosotros",
@@ -12,6 +9,14 @@ export const LINKS: Link[] = [
   {
     label: "Servicios",
     href: "#servicios",
+  },
+  {
+    label: "Aliados",
+    href: "#aliados",
+  },
+  {
+    label: "Clientes",
+    href: "#clientes",
   },
  
 ];
