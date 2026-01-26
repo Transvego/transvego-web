@@ -20,7 +20,7 @@ import { Header } from "../components/ui/Header";
     <title>Transvego</title>
   </head>
   <body>
-    <Header client:load />
+    <Header client:only="react" />
     <slot />
     <Footer />
   </body>
