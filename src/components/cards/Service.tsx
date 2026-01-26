@@ -28,7 +28,7 @@ export const Service = ({
       </motion.h4>
       <h3 className="text-2xl md:text-[40px] text-primary-transvego">{service.service}</h3>
       <p className="text-primary-transvego/80">{service.description}</p>
-      <AnimatePresence>
+      {/* <AnimatePresence>
         {active && (
           <motion.div
             initial={{ opacity: 0, y: 10 }}
@@ -41,7 +41,7 @@ export const Service = ({
             </Button>
           </motion.div>
         )}
-      </AnimatePresence>
+      </AnimatePresence> */}
     </motion.article>
   );
 };

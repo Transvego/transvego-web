@@ -8,6 +8,8 @@ export const Button = ({
   link,
   small,
   icon,
+  type = "button",
+  ...props
 }: ButtonProps) => {
   const [isHovered, setIsHovered] = useState(false);
 
@@ -28,11 +30,13 @@ export const Button = ({
 
   return (
     <motion.button
+    type={type}
+    {...props}
       onHoverStart={() => setIsHovered(true)}
       onHoverEnd={() => setIsHovered(false)}
       className={`${!small ? size.default : size.small} font-medium ${
         variant[buttonVariant]
-      } flex items-center rounded-full cursor-pointer ${
+      } flex items-center justify-center rounded-full cursor-pointer ${
         !icon ? "transition-all duration-300" : "transition-none "
       }`}
     >

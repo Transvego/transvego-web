@@ -7,6 +7,7 @@ import { Wrapper } from "@/components/Wrapper";
 import { Services } from "@/components/sections/Services";
 import { Ticker } from "@/components/Ticker";
 import Clients from "@/components/sections/Clients.astro";
+import ContactUs from "@/components/sections/ContactUs.astro";
 ---
 
 <Layout>
@@ -19,7 +20,8 @@ import Clients from "@/components/sections/Clients.astro";
     </Wrapper>
     <Ticker client:load />
     <Wrapper>
-      <Clients/>
+      <Clients />
+      <ContactUs />
     </Wrapper>
   </main>
 </Layout>
