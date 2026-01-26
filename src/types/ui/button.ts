@@ -1,6 +1,6 @@
-import type { ButtonHTMLAttributes } from "react";
+import type { HTMLMotionProps } from "motion/react";
 
-export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+export interface ButtonProps extends HTMLMotionProps<"button"> {
   children: React.ReactNode;
   secondary?: boolean;
   link ? : boolean;
