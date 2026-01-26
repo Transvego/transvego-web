@@ -6,7 +6,7 @@ export const Services = () => {
   const [active, setActive] = useState<Number | null>(null);
 
   return (
-    <section className="mt-65 lg:h-120">
+    <section id="servicios" className="mt-65 lg:h-120">
       <h2 className="mb-6 md:mb-16 text-primary-transvego text-3xl md:text-5xl lg:text-[64px] font-medium">
         Nuestros Servicios
       </h2>
