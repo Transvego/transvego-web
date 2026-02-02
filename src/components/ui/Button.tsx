@@ -20,7 +20,7 @@ export const Button = ({
     secondary:
       "text-primary-transvego border border-primary-transvego hover:text-white hover:bg-accent-transvego hover:border-accent-transvego",
     link: "text-primary-transvego hover:text-white hover:bg-accent-transvego",
-    disabled: "bg-gray-300 text-gray-500 ",
+    disabled: "bg-gray-300 border border-gray-300 text-gray-500 ",
   };
 
   const buttonVariant = disabled
