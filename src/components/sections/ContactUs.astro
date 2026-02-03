@@ -1,0 +1,26 @@
+---
+import { ContactForm } from "../forms/Contact";
+import { ContactInfo } from "../ContactInfo";
+---
+
+<section
+  id="contacto"
+  class="mt-65 p-6 md:py-12 md:px-10 lg:py-30 lg:px-20 flex flex-col gap-8 md:gap-12 lg:gap-16 rounded-4xl bg-gray-transvego"
+>
+  <h2
+    class="self-start text-primary-transvego text-3xl md:text-5xl lg:text-[64px] font-medium mb-6"
+  >
+    Te Contactamos
+  </h2>
+  <div class="flex flex-col lg:flex-row gap-12 items-center justify-between">
+    <div class=" flex flex-col w-full justify-between gap-24">
+      <ContactInfo />
+
+      <p class="font-medium  text-primary-transvego/60 md:w-120">
+        Déjanos tu correo y nos pondremos en contacto contigo para brindarte más
+        información y resolver cualquier duda.
+      </p>
+    </div>
+    <ContactForm client:visible />
+  </div>
+</section>
