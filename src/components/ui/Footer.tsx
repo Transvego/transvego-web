@@ -31,7 +31,7 @@ export const Footer = () => {
                   href={contact.href}
                   className="flex items-center gap-4 text-primary-transvego/80"
                 >
-                  <i>{contact.icon}</i> {contact.label}
+                  <i>{contact.icon}</i> {contact.data}
                 </a>
               ))}
             </div>

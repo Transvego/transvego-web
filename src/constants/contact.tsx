@@ -7,20 +7,24 @@ import type { Contact } from "../types/contact";
 export const CONTACT: Contact[] = [
   {
     icon: <Email />,
-    label: "info@transvego.com",
+    label: "Correo",
+    data: "info@transvego.com",
     href: "mailto:info@transvego.com",
   },
   {
     icon: <Phone />,
-    label: "310 848 6714",
+    label: "Whatsapp",
+    data: "310 848 6714",
   },
   {
     icon: <Tel />,
-    label: "602 326 9418",
+    label: "Teléfono",
+    data: "602 326 9418",
   },
   {
     icon: <Marker />,
-    label: "Carrera 87 #6-28 Cali - Valle",
+    label: "Dirección",
+    data: "Carrera 87 #6-28 Cali - Valle",
     href: "https://maps.app.goo.gl/9V4DyXvep4dfwkTRA?g_st=aw",
   },
 ];
