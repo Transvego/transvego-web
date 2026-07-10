@@ -1,4 +1,4 @@
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence } from "motion/react";
 import type { ButtonProps } from "../../types/ui/button";
 import { useState } from "react";
 
