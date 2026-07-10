@@ -8,7 +8,7 @@ export const Footer = () => {
   return (
     <footer className="mt-32 md:mt-40 py-16">
       <Wrapper>
-        <div className="flex flex-col lg:flex-row gap-16 items-center justify-between w-full">
+        <div className="flex flex-col lg:flex-row gap-16 lg:items-center justify-between w-full">
           <div className="flex flex-col gap-2 md:gap-6">
             <img
               src="/images/logos/primary.webp"
@@ -36,13 +36,28 @@ export const Footer = () => {
               ))}
             </div>
           </div>
-          <div className="flex flex-col justify-between gap-2">
+          <div className="flex flex-col items-start justify-between gap-2">
             {LINKS.map((link, index) => (
-              <Button key={index} onClick={() => handleScroll(link.href)} link small>
+              <Button
+                key={index}
+                onClick={() => handleScroll(link.href)}
+                link
+                small
+              >
                 {link.label}
               </Button>
-             
             ))}
+          </div>
+          <div className="flex flex-col items-start gap-2 self-start">
+            <a
+              href="https://drive.google.com/drive/folders/1DAm0Uuiz_rnJbU2CrOFOD0Z4r4Qu2JnC?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button link small>
+                Documentos de interés
+              </Button>
+            </a>
           </div>
         </div>
       </Wrapper>
