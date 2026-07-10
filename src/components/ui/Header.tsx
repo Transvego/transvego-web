@@ -1,7 +1,7 @@
 import { handleScroll } from "@/lib/utils";
 import { LINKS } from "../../constants/nav";
 import { Button } from "./Button";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence } from "motion/react";
 import { useEffect, useState } from "react";
 
 export const Header = () => {
